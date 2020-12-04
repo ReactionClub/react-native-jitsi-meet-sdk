@@ -22,9 +22,6 @@
 #import "JitsiMeetView+Private.h"
 #import "RCTBridgeWrapper.h"
 #import "ReactUtils.h"
-#import "RNSplashScreen.h"
-
-#import <RNGoogleSignin/RNGoogleSignin.h>
 #import <WebRTC/RTCLogging.h>
 
 
@@ -85,31 +82,6 @@
     JitsiMeetConferenceOptions *options = [self optionsFromUserActivity:userActivity];
 
     return options && [JitsiMeetView setPropsInViews:[options asProps]];
-}
-
-- (BOOL)application:(UIApplication *)app
-            openURL:(NSURL *)url
-            options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
-
-    if ([Dropbox application:app openURL:url options:options]) {
-        return YES;
-    }
-
-    if ([RNGoogleSignin application:app
-                            openURL:url
-                            options:options]) {
-        return YES;
-    }
-
-    if (_customUrlScheme == nil || ![_customUrlScheme isEqualToString:url.scheme]) {
-        return NO;
-    }
-
-    JitsiMeetConferenceOptions *conferenceOptions = [JitsiMeetConferenceOptions fromBuilder:^(JitsiMeetConferenceOptionsBuilder *builder) {
-        builder.room = [url absoluteString];
-    }];
-
-    return [JitsiMeetView setPropsInViews:[conferenceOptions asProps]];
 }
 
 #pragma mark - Utility methods
@@ -184,9 +156,9 @@
     return nil;
 }
 
-- (void)showSplashScreen:(UIView*)rootView {
-    [RNSplashScreen showSplash:@"LaunchScreen" inRootView:rootView];
-}
+// - (void)showSplashScreen:(UIView*)rootView {
+//     [RNSplashScreen showSplash:@"LaunchScreen" inRootView:rootView];
+// }
 
 #pragma mark - Property getter / setters
 

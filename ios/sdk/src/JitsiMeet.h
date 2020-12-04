@@ -15,12 +15,12 @@
  * limitations under the License.
  */
 
-#import <JitsiMeet/JitsiMeetView.h>
-#import <JitsiMeet/JitsiMeetViewDelegate.h>
-#import <JitsiMeet/JitsiMeetConferenceOptions.h>
-#import <JitsiMeet/JitsiMeetLogger.h>
-#import <JitsiMeet/JitsiMeetBaseLogHandler.h>
-#import <JitsiMeet/InfoPlistUtil.h>
+
+#import "JitsiMeetView.h"
+#import "JitsiMeetViewDelegate.h"
+#import "JitsiMeetConferenceOptions.h"
+#import "JitsiMeetBaseLogHandler.h"
+#import "InfoPlistUtil.h"
 
 
 @interface JitsiMeet : NSObject
