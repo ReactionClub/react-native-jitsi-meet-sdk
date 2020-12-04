@@ -8,7 +8,6 @@ import React, { PureComponent } from 'react';
 import { AppRegistry } from 'react-native';
 
 import { App } from './features/app/components';
-import { _initLogging } from './features/base/logging/functions';
 import { IncomingCallApp } from './features/mobile/incoming-call';
 
 declare var __DEV__;
@@ -46,9 +45,6 @@ class Root extends PureComponent<Props> {
     }
 }
 
-// Initialize logging.
-_initLogging();
-
 // HORRIBLE HACK ALERT! React Native logs the initial props with `console.log`. Here we are quickly patching it
 // to avoid logging potentially sensitive information.
 if (!__DEV__) {
@@ -69,6 +65,7 @@ if (!__DEV__) {
 }
 
 
+export default Root
 // // Register the main/root Component of JitsiMeetView.
 // AppRegistry.registerComponent('App', () => Root);
 //
