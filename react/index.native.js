@@ -69,8 +69,8 @@ if (!__DEV__) {
 }
 
 
-// Register the main/root Component of JitsiMeetView.
-AppRegistry.registerComponent('App', () => Root);
-
-// Register the main/root Component of IncomingCallView.
-AppRegistry.registerComponent('IncomingCallApp', () => IncomingCallApp);
+// // Register the main/root Component of JitsiMeetView.
+// AppRegistry.registerComponent('App', () => Root);
+//
+// // Register the main/root Component of IncomingCallView.
+// AppRegistry.registerComponent('IncomingCallApp', () => IncomingCallApp);

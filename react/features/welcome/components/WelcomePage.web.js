@@ -7,7 +7,6 @@ import { translate, translateToHTML } from '../../base/i18n';
 import { Icon, IconWarning } from '../../base/icons';
 import { Watermarks } from '../../base/react';
 import { connect } from '../../base/redux';
-import { CalendarList } from '../../calendar-sync';
 import { RecentList } from '../../recent-list';
 import { SettingsButton, SETTINGS_TABS } from '../../settings';
 
@@ -387,13 +386,6 @@ class WelcomePage extends AbstractWelcomePage {
         const { _calendarEnabled, _recentListEnabled, t } = this.props;
 
         const tabs = [];
-
-        if (_calendarEnabled) {
-            tabs.push({
-                label: t('welcomepage.calendar'),
-                content: <CalendarList />
-            });
-        }
 
         if (_recentListEnabled) {
             tabs.push({

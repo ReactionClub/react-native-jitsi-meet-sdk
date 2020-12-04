@@ -26,7 +26,6 @@ import '../base/tracks/reducer';
 import '../base/user-interaction/reducer';
 import '../billing-counter/reducer';
 import '../blur/reducer';
-import '../calendar-sync/reducer';
 import '../chat/reducer';
 import '../deep-linking/reducer';
 import '../device-selection/reducer';
