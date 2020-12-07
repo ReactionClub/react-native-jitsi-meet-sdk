@@ -1,6 +1,7 @@
 // @flow
 
 import { NativeModules } from 'react-native';
+import JitsiListener from '../../../JitsiListener'
 
 import { getAppProp } from '../../base/app';
 
@@ -20,6 +21,8 @@ export function sendEvent(store: Object, name: string, data: Object) {
     // the native ExternalAPI module so that the latter may match the former to
     // the native view which hosts it.
     const externalAPIScope = getAppProp(store, 'externalAPIScope');
+
+    JitsiListener.emit(name, data)
 
     externalAPIScope
         && NativeModules.ExternalAPI.sendEvent(name, data, externalAPIScope);
