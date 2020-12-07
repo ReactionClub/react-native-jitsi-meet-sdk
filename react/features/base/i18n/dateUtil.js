@@ -5,7 +5,8 @@ import moment from 'moment';
 import i18next from './i18next';
 
 // allows for moment durations to be formatted
-import 'moment-duration-format';
+import momentDurationFormatSetup from 'moment-duration-format';
+momentDurationFormatSetup(moment)
 
 // MomentJS uses static language bundle loading, so in order to support dynamic
 // language selection in the app we need to load all bundles that we support in
@@ -62,7 +63,7 @@ export function getLocalizedDurationFormatter(duration: number) {
     // If the conference is under an hour long we want to display it without
     // showing the hour and we want to include the hour if the conference is
     // more than an hour long
-
+    console.log('moment.duration', moment.duration)
     if (moment.duration(duration).format('h') !== '0') {
         return moment.duration(duration).format('h:mm:ss');
     }
