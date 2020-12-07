@@ -31,7 +31,6 @@
     "i18next": "17.0.6",
     "i18next-browser-languagedetector": "3.0.1",
     "i18next-xhr-backend": "3.0.0",
-    "jQuery-Impromptu": "github:trentrichardson/jQuery-Impromptu#v6.0.0",
     "jitsi-meet-logger": "github:jitsi/jitsi-meet-logger#v1.0.0",
     "jquery": "3.5.1",
     "jquery-contextmenu": "2.4.5",
@@ -59,6 +58,7 @@
     "rtcstats": "github:jitsi/rtcstats#v6.2.0",
     "stackblur-canvas": "2.3.0",
     "styled-components": "3.4.9",
+    "unorm": "1.6.0",
     "util": "0.12.1",
     "uuid": "3.1.0",
     "windows-iana": "^3.1.0",
@@ -97,7 +97,6 @@
     "sass": "1.26.8",
     "string-replace-loader": "2.1.1",
     "style-loader": "0.19.0",
-    "unorm": "1.6.0",
     "webpack": "4.43.0",
     "webpack-bundle-analyzer": "3.4.1",
     "webpack-cli": "3.3.11",
@@ -108,31 +107,27 @@
     "@react-native-community/google-signin": "^3.0.1",
     "@react-native-community/netinfo": "^5.9.9",
     "react-native": "^0.61.0",
-    "react-native-webrtc": "^1.87.1",
-    "react-native-immersive": "^2.0.0",
-    "react-native-keep-awake": "^4.0.0",
-    "react-native-locale-detector": "^1.0.1",
     "react-native-background-timer": "^2.4.0",
     "react-native-callstats": "^3.61.0",
     "react-native-collapsible": "^1.5.1",
     "react-native-default-preference": "^1.4.2",
+    "react-native-immersive": "^2.0.0",
+    "react-native-keep-awake": "^4.0.0",
     "react-native-linear-gradient": "^2.5.6",
+    "react-native-locale-detector": "^1.0.1",
     "react-native-sound": "^0.11.0",
     "react-native-svg": "^10.1.0",
     "react-native-watch-connectivity": "^0.4.3",
+    "react-native-webrtc": "^1.87.1",
     "react-native-webview": "^10.9.0",
     "react-native-youtube-iframe": "^1.2.3"
   },
   "engines": {
-    "node": ">=8.0.0",
-    "npm": ">=6.0.0"
+    "node": ">=10.0.0"
   },
   "license": "Apache-2.0",
   "scripts": {
     "lint": "eslint . && flow",
     "validate": "npm ls"
-  },
-  "browser": {
-    "jQuery-Impromptu": "jQuery-Impromptu/src/jquery-impromptu.js"
   }
 }
