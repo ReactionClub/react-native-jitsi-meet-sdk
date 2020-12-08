@@ -1,6 +1,6 @@
 {
   "name": "@reaction-club/jitsi-meet",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A sample app for the Jitsi Videobridge",
   "main": "index.js",
   "repository": {
@@ -33,6 +33,7 @@
     "jitsi-meet-logger": "github:jitsi/jitsi-meet-logger#v1.0.0",
     "jquery": "3.5.1",
     "js-md5": "0.6.1",
+      "react-emoji-render": "1.2.4",
     "jwt-decode": "2.2.0",
     "libflacjs": "github:mmig/libflac.js#93d37e7f811f01cf7d8b6a603e38bd3c3810907d",
     "lodash": "4.17.19",
