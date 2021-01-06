@@ -73,7 +73,7 @@ target 'JitsiMeet' do
   #
 
   pod 'Amplitude-iOS', '~> 4.0.4'
-  pod 'CocoaLumberjack', '~>3.5.3'
+  pod 'CocoaLumberjack', '>= 3.5'
   pod 'ObjectiveDropboxOfficial', '~> 3.9.4'
 
   use_native_modules!
