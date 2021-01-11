@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.dependency "React"
   s.dependency "react-native-webrtc"
   s.dependency 'Amplitude-iOS', '~> 4.0.4'
-  s.dependency 'CocoaLumberjack', '~>3.5.3'
+  s.dependency 'CocoaLumberjack', '>= 3.5'
   s.dependency 'ObjectiveDropboxOfficial', '~> 3.9.4'
 
 end
